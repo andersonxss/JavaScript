@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+// https://flaviocopes.com/how-to-shuffle-array-javascript/
+        
+        let list = [1,2,3,4,5,6,7,8,9,10]
+        list = list.sort(() => Math.random() - 0.5)
+
+        let arrGrupos = []
+        while (list.length > 0) {
+        arrGrupos.push(list.splice(0,4));
+        }
+
+
+         console.log(arrGrupos[2])
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
